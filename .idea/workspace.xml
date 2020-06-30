@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="96ac288d-01fa-4c7f-9a57-37c3f6d5951b" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1dyzoswVErhuz1qEHhnM44Dn1h9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/_Example" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\sourceRepository\python repository\Iris_pattern_classification\_Example" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="96ac288d-01fa-4c7f-9a57-37c3f6d5951b" name="Default Changelist" comment="" />
+      <created>1593412299062</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1593412299062</updated>
+    </task>
+    <task id="LOCAL-00001" summary=" commit">
+      <created>1593414298700</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1593414298700</updated>
+    </task>
+    <task id="LOCAL-00002" summary=" commit">
+      <created>1593414411275</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1593414411275</updated>
+    </task>
+    <task id="LOCAL-00003" summary="IrisPattern commit">
+      <created>1593414585854</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1593414585854</updated>
+    </task>
+    <task id="LOCAL-00004" summary="CNNModel / Util commit">
+      <created>1593415226017</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1593415226017</updated>
+    </task>
+    <task id="LOCAL-00005" summary="CNNUtil commit">
+      <created>1593415329274</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1593415329274</updated>
+    </task>
+    <task id="LOCAL-00006" summary="CNNModel commit">
+      <created>1593415533602</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1593415533602</updated>
+    </task>
+    <task id="LOCAL-00007" summary="CNNModel commit">
+      <created>1593415615556</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1593415615556</updated>
+    </task>
+    <task id="LOCAL-00008" summary="CNNModel commit">
+      <created>1593503817987</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1593503817987</updated>
+    </task>
+    <task id="LOCAL-00009" summary="CNNModel commit">
+      <created>1593504415965</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1593504415965</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value=" commit" />
+    <MESSAGE value="IrisPattern commit" />
+    <MESSAGE value="CNNModel / Util commit" />
+    <MESSAGE value="CNNUtil commit" />
+    <MESSAGE value="CNNModel commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="CNNModel commit" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2830" y="418" key="#Notifications" timestamp="1593504141335">
+      <screen x="1920" y="0" width="2048" height="1120" />
+    </state>
+    <state x="2830" y="418" key="#Notifications/1920.0.2048.1120/0.0.1920.1040@1920.0.2048.1120" timestamp="1593504141335" />
+    <state x="2560" y="244" key="CommitChangelistDialog2" timestamp="1593504409054">
+      <screen x="1920" y="0" width="2048" height="1120" />
+    </state>
+    <state x="2560" y="244" key="CommitChangelistDialog2/1920.0.2048.1120/0.0.1920.1040@1920.0.2048.1120" timestamp="1593504409054" />
+    <state x="2725" y="432" key="FileChooserDialogImpl" timestamp="1593500553734">
+      <screen x="1920" y="0" width="2048" height="1120" />
+    </state>
+    <state x="2725" y="432" key="FileChooserDialogImpl/1920.0.2048.1120/0.0.1920.1040@1920.0.2048.1120" timestamp="1593500553734" />
+    <state x="2446" y="160" key="SettingsEditor" timestamp="1593504970644">
+      <screen x="1920" y="0" width="2048" height="1120" />
+    </state>
+    <state x="2446" y="160" key="SettingsEditor/1920.0.2048.1120/0.0.1920.1040@1920.0.2048.1120" timestamp="1593504970644" />
+    <state x="2537" y="289" key="Vcs.Push.Dialog.v2" timestamp="1593504440383">
+      <screen x="1920" y="0" width="2048" height="1120" />
+    </state>
+    <state x="2537" y="289" key="Vcs.Push.Dialog.v2/1920.0.2048.1120/0.0.1920.1040@1920.0.2048.1120" timestamp="1593504440383" />
+    <state x="2747" y="469" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593415730177">
+      <screen x="1920" y="0" width="2048" height="1120" />
+    </state>
+    <state x="2747" y="469" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.2048.1120/0.0.1920.1040@1920.0.2048.1120" timestamp="1593415730177" />
+  </component>
+</project>
