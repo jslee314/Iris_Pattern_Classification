@@ -1,10 +1,10 @@
-from .constants import *
 from tensorflow.keras.callbacks import TensorBoard, ReduceLROnPlateau, CSVLogger, EarlyStopping, ModelCheckpoint
 import numpy as np
 
 class CustomCallback():
+
     @staticmethod
-    def callback():
+    def callback(patience, ckpt):
 
         # 1. 텐서보드 콜백함수 정의
         # tensorBoard_hist = TensorBoard(log_dir=FLG.TENSORBOARD,
@@ -21,11 +21,11 @@ class CustomCallback():
         # 2. 조기종료 콜백함수 정의
         early_stopper = EarlyStopping(monitor='val_loss',
                                                        min_delta=0,
-                                                       patience=FLG.PATIENCE)
+                                                       patience=patience)
 
 
         # 3. 체크포인트 파일 콜백함수 정의
-        checkpointer= ModelCheckpoint(filepath=FLG.CKPT,
+        checkpointer= ModelCheckpoint(filepath=ckpt,
                                                            monitor='val_loss',
                                                            verbose=1,
                                                            save_best_only=True)

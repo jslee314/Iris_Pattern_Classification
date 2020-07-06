@@ -1,16 +1,16 @@
 from BinaryPattern.util.constants import *
 from BinaryPattern.util.dataloader import DataLoader
-from BinaryPattern.util.customcallback import CustomCallback
 from BinaryPattern.util.output import makeoutput, make_dir
 from BinaryPattern.util.gendataloader import ImageGenerator
 from keras import backend as K
 from tensorflow.keras.losses import binary_crossentropy
+from CNNUtil.customcallback import CustomCallback
 from CNNModels.VGG.model.smallervggnet import SmallerVGGNet
 from CNNModels.VGG.model.vgg16v1 import VGG_16
 from CNNModels.MobileNet.model.mobilenet import MobileNetBuilder
 from albumentations import (Compose,
 HorizontalFlip, VerticalFlip, ShiftScaleRotate,
-RandomRotate90, Transpose,  RandomSizedCrop,RandomContrast, RandomGamma, RandomBrightness)
+RandomRotate90, Transpose, RandomSizedCrop, RandomContrast, RandomGamma, RandomBrightness)
 
 input_shape = (FLG.HEIGHT, FLG.WIDTH, FLG.DEPTH)
 if K.image_data_format() == "channels_first":
@@ -54,21 +54,19 @@ model = SmallerVGGNet.build(width=FLG.WIDTH, height=FLG.HEIGHT,depth= FLG.DEPTH,
 # Non-trainable params: 11,024
 model.summary()
 model.compile(loss=binary_crossentropy, optimizer='rmsprop', metrics=['accuracy'])
-list_callbacks = CustomCallback.callback()
+list_callbacks = CustomCallback.callback(FLG.PATIENCE, FLG.CKPT)
 
-data_dir = 'D:\Data\iris_pattern\Binary\spoke_binary_padding'
+data_dir = 'D:/2. data/iris_pattern/Binary/spoke_binary'
 
 # AUGMENTATIONS_TRAIN = Compose([
 #     HorizontalFlip(p=0.5), VerticalFlip(p=0.5), ShiftScaleRotate(p=0.8), RandomRotate90(p=0.8), Transpose(p=0.5),
 #     RandomSizedCrop(min_max_height=(FLG.HEIGHT*2/3, FLG.WIDTH*2/3), height=FLG.HEIGHT, width=FLG.WIDTH, p=0.5),
 #     RandomContrast(p=0.5), RandomGamma(p=0.5), RandomBrightness(p=0.5)
 # ])
-
 AUGMENTATIONS_TRAIN = Compose([
     HorizontalFlip(p=0.5), VerticalFlip(p=0.5), ShiftScaleRotate(p=0.8), RandomRotate90(p=0.8), Transpose(p=0.5),
     RandomContrast(p=0.5), RandomGamma(p=0.5), RandomBrightness(p=0.5)
 ])
-
 AUGMENTATIONS_TEST = Compose([
     VerticalFlip(p=0.5)
 ])

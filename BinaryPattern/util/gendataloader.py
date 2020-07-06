@@ -12,7 +12,7 @@ class ImageGenerator(Sequence):
     def __init__(self, data_dir= 'D:\Data\iris_pattern\Original2', augmentations=None):
         self.total_paths, self.total_labels = self.get_total_data_path(data_dir)
         self.batch_size = FLG.BATCH_SIZE
-        self.indices = np.random.permutation(len(self.total_paths))
+        self.indices = np.random.permutatiocan(len(self.total_paths))
         self.augment = augmentations
 
     def get_total_data_path(self, data_dir):
@@ -64,7 +64,7 @@ class ImageGenerator(Sequence):
         y_batch_one_hots = []
         for y_batch in y_batchs:
             if y_batch =='defect':
-                one_hot =[1, 0]
+                one_hot = [1, 0]
             elif y_batch =='lacuna':
                 one_hot = [1, 0]
             elif y_batch =='normal':

@@ -15,7 +15,6 @@ def makeoutput(x_val, y_val, model, hist):
     # print('[결과저장 1]   model.evaluate)')
     # loss_and_metrics = model.evaluate(x_val, y_val, batch_size=FLG.BATCH_SIZE)
     # print('loss_and_metrics : ' + str(loss_and_metrics))
-    #
     print('[결과저장 2]   모델 학습 과정 그래프 저장: png')
     hist_saved(hist)
 

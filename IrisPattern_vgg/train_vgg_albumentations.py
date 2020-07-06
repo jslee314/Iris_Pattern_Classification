@@ -1,9 +1,9 @@
 from IrisPattern_vgg.util.constants import *
 from IrisPattern_vgg.util.dataloader import DataLoader
-from IrisPattern_vgg.util.customcallback import CustomCallback
 from keras import backend as K
 from IrisPattern_vgg.util.output import makeoutput, make_dir
-from IrisPattern_vgg.util.gendataloader import ImageGenerator
+from IrisPattern_vgg.util.gendataloader import ImageGenerator\
+from CNNUtil.customcallback import CustomCallback
 from CNNModels.EfficientNet .efficientnet import efficientNet_factory
 from tensorflow.keras.losses import categorical_crossentropy
 from CNNModels.VGG.model.vgg16v1 import VGG_16

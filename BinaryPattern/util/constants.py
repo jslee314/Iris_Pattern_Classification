@@ -29,7 +29,7 @@ tf.compat.v1.flags.DEFINE_integer('PATIENCE', 300,
 # todo 프로젝트 이름 변경해야
 # Project 기본 정보
 tf.compat.v1.flags.DEFINE_string('DATA_MODEL',
-                    'smallvgg_spoke_padding',
+                    'smallvgg_lacuna_padding',
                     '프로젝트 이름')
 
 tf.compat.v1.flags.DEFINE_string('PROJECT_NAME',
