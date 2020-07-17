@@ -26,6 +26,7 @@ class CustomCallback():
 
         # 3. 체크포인트 파일 콜백함수 정의
         checkpointer= ModelCheckpoint(filepath=ckpt,
+                                      save_weights_only=True,
                                                            monitor='val_loss',
                                                            verbose=1,
                                                            save_best_only=True)

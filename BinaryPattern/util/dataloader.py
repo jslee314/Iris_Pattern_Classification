@@ -24,8 +24,8 @@ class DataLoader:
         return new_img
 
     def findRegion(img):
-        gray = cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)
-        rct, thr = cv2.threshold(gray, 1, 255, cv2.THRESH_BINARY)
+        # gray = cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)
+        rct, thr = cv2.threshold(img, 1, 255, cv2.THRESH_BINARY)
         contours, hierachy = cv2.findContours(thr, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
         x, y, w, h = cv2.boundingRect(contours[0])
         len = w if w > h else h
@@ -123,12 +123,15 @@ class DataLoader:
 
         print("[INFO] 모든 이미지에 대하여 이미지 데이터와 라벨을 추출 ..")
         for imagePath in imagePaths:
-            print(imagePath)
+            # print(imagePath)
             # a. 이미지를 로드하고, 전처리를 한 후 데이터 목록에 저장
             image = cv2.imread(imagePath)
             image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
-            image = DataLoader.img_padding_2(image)
-            # image = cv2.resize(image, (FLG.HEIGHT, FLG.WIDTH))            image = img_to_array(image)
+            # image = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)
+
+            # image = DataLoader.img_padding_2(image)
+            image = cv2.resize(image, (FLG.HEIGHT, FLG.WIDTH))
+            image = img_to_array(image)
             datas.append(image)
             # b. 이미지 파일명에서  이미지의 정답(label) 세트 추출
             label = imagePath.split(os.path.sep)[-2]
@@ -136,13 +139,7 @@ class DataLoader:
 
         print("[INFO] scale the raw pixel 의 밝기값을 [0, 1]으로 조정하고 np.array로 변경")
         x_val = np.array(datas, dtype="float") / 255.0
-
         y_val = np.array(labels)
-
-
         y_val = DataLoader.encode_one_hot(y_val)
-
-        # lb = LabelBinarizer()
-        # y_val = lb.fit_transform(y_val)
 
         return x_val, y_val

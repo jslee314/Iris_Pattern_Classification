@@ -60,7 +60,7 @@ def plot_confusion_matrix(cm,
     plt.tight_layout()
 
 
-def confusion_matrix_saved(confu_mx):
+def confusion_matrix_saved(confu_mx, is_save=True):
     # Compute confusion matrix : confu_mx
     np.set_printoptions(precision=2)
 
@@ -68,11 +68,13 @@ def confusion_matrix_saved(confu_mx):
     plt.figure()
     plot_confusion_matrix(confu_mx,
                           title='Confusion matrix, without normalization')
-    plt.savefig(FLG.CONFUSION_MX_PLOT)
+    if is_save:
+        plt.savefig(FLG.CONFUSION_MX_PLOT)
 
     # Plot normalized confusion matrix
     plt.figure()
     plot_confusion_matrix(confu_mx, normalize=True,
                           title='Normalized confusion matrix')
-    plt.savefig(FLG.CONFUSION_MX_PLOT_NOM)
+    if is_save:
+        plt.savefig(FLG.CONFUSION_MX_PLOT_NOM)
     plt.show()

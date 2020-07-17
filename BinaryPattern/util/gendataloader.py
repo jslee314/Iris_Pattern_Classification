@@ -12,7 +12,7 @@ class ImageGenerator(Sequence):
     def __init__(self, data_dir= 'D:\Data\iris_pattern\Original2', augmentations=None):
         self.total_paths, self.total_labels = self.get_total_data_path(data_dir)
         self.batch_size = FLG.BATCH_SIZE
-        self.indices = np.random.permutatiocan(len(self.total_paths))
+        self.indices = np.random.permutation(len(self.total_paths))
         self.augment = augmentations
 
     def get_total_data_path(self, data_dir):
@@ -35,6 +35,7 @@ class ImageGenerator(Sequence):
         len = w if w > h else h
         dst = img[y: y + len, x: x + len]
         return dst
+
     def img_padding_2(self, img, LENGTH=FLG.WIDTH):
         blank_image = np.zeros((LENGTH, LENGTH, 3), np.uint8)
         (w, h) = (img.shape[0], img.shape[1])
@@ -51,9 +52,11 @@ class ImageGenerator(Sequence):
     def load_image(self, image_path):
         image = cv2.imread(image_path)
         image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+        # image = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)
+
         image = self.findRegion(image)
-        image = self.img_padding_2(image)
-        # image = cv2.resize(image, (FLG.HEIGHT, FLG.WIDTH))
+        # image = self.img_padding_2(image)
+        image = cv2.resize(image, (FLG.HEIGHT, FLG.WIDTH))
         if self.augment is not None:
             image = self.augment(image=image)['image']
 

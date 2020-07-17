@@ -20,27 +20,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="96ac288d-01fa-4c7f-9a57-37c3f6d5951b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/CNNUtil/apply_gradcam.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CNNUtil/dog.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CNNUtil/gradcam.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BinaryPattern/calculate_accuracy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BinaryPattern/test_for_accuracy.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BinaryPattern/img_preprocessing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BinaryPattern/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/BinaryPattern/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BinaryPattern/test_binary_defect.py" beforeDir="false" afterPath="$PROJECT_DIR$/BinaryPattern/test_binary_defect.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BinaryPattern/test_binary_lacuna.py" beforeDir="false" afterPath="$PROJECT_DIR$/BinaryPattern/test_binary_lacuna.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BinaryPattern/train_binary.py" beforeDir="false" afterPath="$PROJECT_DIR$/BinaryPattern/train_binary.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BinaryPattern/util/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/BinaryPattern/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BinaryPattern/util/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/BinaryPattern/util/constants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BinaryPattern/util/customcallback.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BinaryPattern/util/dataloader.py" beforeDir="false" afterPath="$PROJECT_DIR$/BinaryPattern/util/dataloader.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BinaryPattern/util/gendataloader.py" beforeDir="false" afterPath="$PROJECT_DIR$/BinaryPattern/util/gendataloader.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BinaryPattern/util/output.py" beforeDir="false" afterPath="$PROJECT_DIR$/BinaryPattern/util/output.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BinaryPattern/util/showtrain.py" beforeDir="false" afterPath="$PROJECT_DIR$/BinaryPattern/util/showtrain.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CNNUtil/apply_gradcam.py" beforeDir="false" afterPath="$PROJECT_DIR$/CNNUtil/apply_gradcam.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CNNUtil/customcallback.py" beforeDir="false" afterPath="$PROJECT_DIR$/CNNUtil/customcallback.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examples/keras-fit-generator/build_dataset.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examples/keras-fit-generator/flowers17_testing.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examples/keras-fit-generator/flowers17_training.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examples/keras-fit-generator/plot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examples/keras-fit-generator/train.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IrisPattern_vgg/train_vggNet.py" beforeDir="false" afterPath="$PROJECT_DIR$/IrisPattern_vgg/train_vggNet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IrisPattern_vgg/train_vgg_albumentations.py" beforeDir="false" afterPath="$PROJECT_DIR$/IrisPattern_vgg/train_vgg_albumentations.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IrisPattern_vgg/util/customcallback.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CNNUtil/gradcam.py" beforeDir="false" afterPath="$PROJECT_DIR$/CNNUtil/gradcam.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TwoStepModel/test_binary_defect.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TwoStepModel/train_binary.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TwoStepModel/util/constants.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TwoStepModel/util/dataloader.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TwoStepModel/util/gendataloader.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TwoStepModel/util/output.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TwoStepModel/util/saver.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TwoStepModel/util/showtrain.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,21 +73,22 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/CNNUtil" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Python" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../BinaryPattern_imageprocessing" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\4. sourceRepository\python_repository\Iris_pattern_classification\CNNUtil" />
-      <recent name="D:\sourceRepository\python repository\Iris_pattern_classification\_Example" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\4. sourceRepository\python_repository\Iris_pattern_classification" />
       <recent name="D:\4. sourceRepository\python_repository\Iris_pattern_classification\CNNUtil" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\4. sourceRepository\python_repository\Iris_pattern_classification\BinaryPattern_imageprocessing\histogram_calculation" />
+      <recent name="D:\4. sourceRepository\python_repository\Iris_pattern_classification\CNNUtil" />
+      <recent name="D:\sourceRepository\python repository\Iris_pattern_classification\_Example" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.apply_gradcam">
-    <configuration name="apply_gradcam" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.train_binary">
+    <configuration name="calcBackProject_Demo2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Iris_pattern_classification" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -93,11 +96,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CNNUtil" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/BinaryPattern_imageprocessing/histogram_calculation" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CNNUtil/apply_gradcam.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BinaryPattern_imageprocessing/histogram_calculation/calcBackProject_Demo2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -106,7 +109,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="calcHist_Demo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Iris_pattern_classification" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/BinaryPattern_imageprocessing/histogram_calculation" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BinaryPattern_imageprocessing/histogram_calculation/calcHist_Demo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="calculate_accuracy" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Iris_pattern_classification" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -118,7 +142,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BinaryPattern/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BinaryPattern/calculate_accuracy.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -127,7 +151,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_binary_defect" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="test_for_accuracy" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Iris_pattern_classification" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -139,7 +163,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BinaryPattern/test_binary_defect.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BinaryPattern/test_for_accuracy.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -171,10 +195,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.apply_gradcam" />
-        <item itemvalue="Python.test_binary_defect" />
-        <item itemvalue="Python.test" />
         <item itemvalue="Python.train_binary" />
+        <item itemvalue="Python.test_for_accuracy" />
+        <item itemvalue="Python.calculate_accuracy" />
+        <item itemvalue="Python.calcBackProject_Demo2" />
+        <item itemvalue="Python.calcHist_Demo" />
       </list>
     </recent_temporary>
   </component>
@@ -273,7 +298,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593505892085</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="#CU-3hu1w0&#10;Grad-CAM Test">
+      <created>1594000304897</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1594000304897</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -295,72 +327,91 @@
     <MESSAGE value="CNNUtil commit" />
     <MESSAGE value="irisPattern commit" />
     <MESSAGE value="CNNModel commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="CNNModel commit" />
+    <MESSAGE value="#CU-3hu1w0&#10;Grad-CAM Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="#CU-3hu1w0&#10;Grad-CAM Test" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2830" y="418" key="#Notifications" timestamp="1593504141335">
       <screen x="1920" y="0" width="2048" height="1120" />
     </state>
     <state x="2830" y="418" key="#Notifications/1920.0.2048.1120/0.0.1920.1040@1920.0.2048.1120" timestamp="1593504141335" />
+    <state x="689" y="356" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594185821004">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="689" y="356" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2048.1112/-1920.0.1920.1040@0.0.2048.1112" timestamp="1594185821004" />
     <state x="755" y="303" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1593658010146">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="755" y="303" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2048.1112/-1920.0.1920.1040@0.0.2048.1112" timestamp="1593658010146" />
-    <state x="1226" y="365" key="#xdebugger.evaluate" timestamp="1594000099845">
+    <state x="643" y="466" key="#xdebugger.evaluate" timestamp="1594176885092">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="1226" y="365" key="#xdebugger.evaluate/0.0.2048.1112@0.0.2048.1112" timestamp="1594000099845" />
-    <state x="2560" y="244" key="CommitChangelistDialog2" timestamp="1593505890134">
-      <screen x="1920" y="0" width="2048" height="1120" />
+    <state x="643" y="466" key="#xdebugger.evaluate/0.0.2048.1112/-1920.0.1920.1040@0.0.2048.1112" timestamp="1594176885092" />
+    <state x="1154" y="468" key="#xdebugger.evaluate/0.0.2048.1112@0.0.2048.1112" timestamp="1594000401764" />
+    <state x="640" y="200" key="CommitChangelistDialog2" timestamp="1594000303489">
+      <screen x="0" y="0" width="2048" height="1112" />
     </state>
+    <state x="640" y="200" key="CommitChangelistDialog2/0.0.2048.1112@0.0.2048.1112" timestamp="1594000303489" />
     <state x="2560" y="244" key="CommitChangelistDialog2/1920.0.2048.1120/0.0.1920.1040@1920.0.2048.1120" timestamp="1593505890134" />
-    <state x="805" y="429" key="FileChooserDialogImpl" timestamp="1593998786409">
+    <state width="666" height="507" key="DebuggerActiveHint" timestamp="1594000405633">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="805" y="429" key="FileChooserDialogImpl/0.0.2048.1112/-1920.0.1920.1040@0.0.2048.1112" timestamp="1593677192382" />
-    <state x="805" y="429" key="FileChooserDialogImpl/0.0.2048.1112@0.0.2048.1112" timestamp="1593998786409" />
+    <state width="666" height="507" key="DebuggerActiveHint/0.0.2048.1112@0.0.2048.1112" timestamp="1594000405633" />
+    <state x="-446" y="214" width="438" height="738" key="FileChooserDialogImpl" timestamp="1594867630240">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-446" y="214" width="438" height="738" key="FileChooserDialogImpl/0.0.2048.1112/-1920.0.1920.1040@0.0.2048.1112" timestamp="1594867630240" />
+    <state x="805" y="429" key="FileChooserDialogImpl/0.0.2048.1112@0.0.2048.1112" timestamp="1594096191529" />
     <state x="2725" y="432" key="FileChooserDialogImpl/1920.0.2048.1120/0.0.1920.1040@1920.0.2048.1120" timestamp="1593500553734" />
-    <state width="2027" height="292" key="GridCell.Tab.0.bottom" timestamp="1594000026978">
+    <state width="1158" height="229" key="GridCell.Tab.0.bottom" timestamp="1594191214207">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1158" height="229" key="GridCell.Tab.0.bottom/0.0.2048.1112/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1594191214207" />
+    <state width="2027" height="225" key="GridCell.Tab.0.bottom/0.0.2048.1112/-1920.0.1920.1040@0.0.2048.1112" timestamp="1594186767352" />
+    <state width="1526" height="186" key="GridCell.Tab.0.bottom/0.0.2048.1112@0.0.2048.1112" timestamp="1594095869002" />
+    <state width="1158" height="229" key="GridCell.Tab.0.center" timestamp="1594191214207">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1158" height="229" key="GridCell.Tab.0.center/0.0.2048.1112/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1594191214207" />
+    <state width="2027" height="225" key="GridCell.Tab.0.center/0.0.2048.1112/-1920.0.1920.1040@0.0.2048.1112" timestamp="1594186767352" />
+    <state width="1526" height="186" key="GridCell.Tab.0.center/0.0.2048.1112@0.0.2048.1112" timestamp="1594095869002" />
+    <state width="1158" height="229" key="GridCell.Tab.0.left" timestamp="1594191214207">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1158" height="229" key="GridCell.Tab.0.left/0.0.2048.1112/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1594191214207" />
+    <state width="2027" height="225" key="GridCell.Tab.0.left/0.0.2048.1112/-1920.0.1920.1040@0.0.2048.1112" timestamp="1594186767352" />
+    <state width="1526" height="186" key="GridCell.Tab.0.left/0.0.2048.1112@0.0.2048.1112" timestamp="1594095869002" />
+    <state width="1158" height="229" key="GridCell.Tab.0.right" timestamp="1594191214207">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1158" height="229" key="GridCell.Tab.0.right/0.0.2048.1112/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1594191214207" />
+    <state width="2027" height="225" key="GridCell.Tab.0.right/0.0.2048.1112/-1920.0.1920.1040@0.0.2048.1112" timestamp="1594186767352" />
+    <state width="1526" height="186" key="GridCell.Tab.0.right/0.0.2048.1112@0.0.2048.1112" timestamp="1594095869002" />
+    <state width="2027" height="417" key="GridCell.Tab.1.bottom" timestamp="1594177868207">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2027" height="413" key="GridCell.Tab.0.bottom/0.0.2048.1112/-1920.0.1920.1040@0.0.2048.1112" timestamp="1593737381280" />
-    <state width="2027" height="292" key="GridCell.Tab.0.bottom/0.0.2048.1112@0.0.2048.1112" timestamp="1594000026978" />
-    <state width="2027" height="292" key="GridCell.Tab.0.center" timestamp="1594000026978">
+    <state width="2027" height="417" key="GridCell.Tab.1.bottom/0.0.2048.1112/-1920.0.1920.1040@0.0.2048.1112" timestamp="1594177868207" />
+    <state width="2027" height="417" key="GridCell.Tab.1.bottom/0.0.2048.1112@0.0.2048.1112" timestamp="1594017485934" />
+    <state width="2027" height="417" key="GridCell.Tab.1.center" timestamp="1594177868207">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2027" height="413" key="GridCell.Tab.0.center/0.0.2048.1112/-1920.0.1920.1040@0.0.2048.1112" timestamp="1593737381280" />
-    <state width="2027" height="292" key="GridCell.Tab.0.center/0.0.2048.1112@0.0.2048.1112" timestamp="1594000026978" />
-    <state width="2027" height="292" key="GridCell.Tab.0.left" timestamp="1594000026978">
+    <state width="2027" height="417" key="GridCell.Tab.1.center/0.0.2048.1112/-1920.0.1920.1040@0.0.2048.1112" timestamp="1594177868207" />
+    <state width="2027" height="417" key="GridCell.Tab.1.center/0.0.2048.1112@0.0.2048.1112" timestamp="1594017485933" />
+    <state width="2027" height="417" key="GridCell.Tab.1.left" timestamp="1594177868207">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2027" height="413" key="GridCell.Tab.0.left/0.0.2048.1112/-1920.0.1920.1040@0.0.2048.1112" timestamp="1593737381279" />
-    <state width="2027" height="292" key="GridCell.Tab.0.left/0.0.2048.1112@0.0.2048.1112" timestamp="1594000026978" />
-    <state width="2027" height="292" key="GridCell.Tab.0.right" timestamp="1594000026978">
+    <state width="2027" height="417" key="GridCell.Tab.1.left/0.0.2048.1112/-1920.0.1920.1040@0.0.2048.1112" timestamp="1594177868207" />
+    <state width="2027" height="417" key="GridCell.Tab.1.left/0.0.2048.1112@0.0.2048.1112" timestamp="1594017485933" />
+    <state width="2027" height="417" key="GridCell.Tab.1.right" timestamp="1594177868207">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2027" height="413" key="GridCell.Tab.0.right/0.0.2048.1112/-1920.0.1920.1040@0.0.2048.1112" timestamp="1593737381280" />
-    <state width="2027" height="292" key="GridCell.Tab.0.right/0.0.2048.1112@0.0.2048.1112" timestamp="1594000026978" />
-    <state width="2027" height="242" key="GridCell.Tab.1.bottom" timestamp="1594000032793">
+    <state width="2027" height="417" key="GridCell.Tab.1.right/0.0.2048.1112/-1920.0.1920.1040@0.0.2048.1112" timestamp="1594177868207" />
+    <state width="2027" height="417" key="GridCell.Tab.1.right/0.0.2048.1112@0.0.2048.1112" timestamp="1594017485933" />
+    <state x="526" y="159" width="981" height="707" key="SettingsEditor" timestamp="1594173455485">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2027" height="242" key="GridCell.Tab.1.bottom/0.0.2048.1112@0.0.2048.1112" timestamp="1594000032793" />
-    <state width="2027" height="242" key="GridCell.Tab.1.center" timestamp="1594000032793">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state width="2027" height="242" key="GridCell.Tab.1.center/0.0.2048.1112@0.0.2048.1112" timestamp="1594000032793" />
-    <state width="2027" height="242" key="GridCell.Tab.1.left" timestamp="1594000032792">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state width="2027" height="242" key="GridCell.Tab.1.left/0.0.2048.1112@0.0.2048.1112" timestamp="1594000032792" />
-    <state width="2027" height="242" key="GridCell.Tab.1.right" timestamp="1594000032793">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state width="2027" height="242" key="GridCell.Tab.1.right/0.0.2048.1112@0.0.2048.1112" timestamp="1594000032793" />
-    <state x="526" y="305" width="981" height="707" key="SettingsEditor" timestamp="1593999731819">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state x="526" y="159" key="SettingsEditor/0.0.2048.1112/-1920.0.1920.1040@0.0.2048.1112" timestamp="1593677801688" />
-    <state x="526" y="305" width="981" height="707" key="SettingsEditor/0.0.2048.1112@0.0.2048.1112" timestamp="1593999731819" />
+    <state x="526" y="159" key="SettingsEditor/0.0.2048.1112/-1920.0.1920.1040@0.0.2048.1112" timestamp="1594173455485" />
+    <state x="526" y="305" width="981" height="707" key="SettingsEditor/0.0.2048.1112@0.0.2048.1112" timestamp="1594014323533" />
     <state x="2446" y="160" key="SettingsEditor/1920.0.2048.1120/0.0.1920.1040@1920.0.2048.1120" timestamp="1593504970644" />
     <state x="2537" y="289" key="Vcs.Push.Dialog.v2" timestamp="1593505823174">
       <screen x="1920" y="0" width="2048" height="1120" />
@@ -370,46 +421,41 @@
       <screen x="1920" y="0" width="2048" height="1120" />
     </state>
     <state x="2747" y="469" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.2048.1120/0.0.1920.1040@1920.0.2048.1120" timestamp="1593415730177" />
+    <state x="-1236" y="144" width="783" height="804" key="find.popup" timestamp="1594193512095">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1236" y="144" width="783" height="804" key="find.popup/0.0.2048.1112/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1594193512095" />
+    <state x="730" y="154" width="835" height="804" key="find.popup/0.0.2048.1112/-1920.0.1920.1040@0.0.2048.1112" timestamp="1594185645704" />
+    <state x="687" y="243" width="672" height="678" key="search.everywhere.popup" timestamp="1594172536718">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="687" y="243" width="672" height="678" key="search.everywhere.popup/0.0.2048.1112/-1920.0.1920.1040@0.0.2048.1112" timestamp="1594172536718" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/CNNUtil/apply_gradcam.py</url>
-          <line>46</line>
+          <line>42</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/CNNUtil/apply_gradcam.py</url>
-          <line>45</line>
+          <line>41</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BinaryPattern/test_binary_defect.py</url>
-          <line>99</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BinaryPattern/test_binary_defect.py</url>
-          <line>100</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BinaryPattern/test_binary_defect.py</url>
-          <line>104</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/CNNUtil/apply_gradcam.py</url>
-          <line>33</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/CNNUtil/apply_gradcam.py</url>
-          <line>34</line>
-          <option name="timeStamp" value="16" />
+          <url>file://$PROJECT_DIR$/BinaryPattern/test.py</url>
+          <line>79</line>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="heatmap" language="Python" />
+        <watch expression="data" language="Python" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

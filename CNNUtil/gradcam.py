@@ -20,7 +20,6 @@ class GradCAM:
 			# layer에 4D 출력이 있는지 확인
 			if len(layer.output_shape) == 4:
 				return layer.name
-
 		# 그렇지 않으면 4D 레이어를 찾을 수 없으므로 GradCAM 알고리즘을 적용 할 수 없음
 		raise ValueError("Could not find 4D layer. Cannot apply GradCAM.")
 

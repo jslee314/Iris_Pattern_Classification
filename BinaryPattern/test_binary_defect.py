@@ -50,13 +50,6 @@ h5_weights_path = 'output/smallvgg_defect_padding200_32/modelsaved/h5/smallvgg_d
 model.load_weights(h5_weights_path)
 model.compile(loss=categorical_crossentropy, optimizer='rmsprop', metrics=['accuracy'])
 
-
-
-
-
-
-
-
 datas = []
 origs = []
 
@@ -65,7 +58,7 @@ imagePaths = sorted(list(paths.list_images(data_dir)))
 
 for imagePath in imagePaths:
     image = cv2.imread(imagePath)
-    image = findRegion(image)
+    # image = findRegion(image)
     image = img_padding_2(image)
     origs.append(image.copy())
     image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)

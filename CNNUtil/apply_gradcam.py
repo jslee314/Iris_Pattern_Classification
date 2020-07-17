@@ -17,32 +17,28 @@ model = Model(weights="imagenet")
 
 
 
-
-
-
-# 디스크에서 원본 이미지를로드 한 다음 (OpenCV 형식) 이미지를 대상 크기로 조정
+# 1 디스크에서 원본 이미지를로드 한 다음 (OpenCV 형식) 이미지를 대상 크기로 조정
 orig = cv2.imread("dog.jpg")
-resized = cv2.resize(orig, (224, 224))
 
-# 디스크에서 입력 이미지를로드하고 (Keras / TensorFlow 형식으로) 전처리
+# 2 디스크에서 입력 이미지를로드하고 (Keras / TensorFlow 형식으로) 전처리
 image = load_img("dog.jpg", target_size=(224, 224))
 image = img_to_array(image)
 image = np.expand_dims(image, axis=0)
 image = imagenet_utils.preprocess_input(image)
 
-# 네트워크를 사용하여 입력 image에 대해 예측하고 해당 확률이 가장 큰 클래스 레이블 예측
+# 3 네트워크를 사용하여 입력 image에 대해 예측하고 해당 확률이 가장 큰 클래스 레이블 예측
 preds = model.predict(image)
 i = np.argmax(preds[0])
 
-# 사람이 읽을 수있는 레이블을 얻기 위해 ImageNet 예측을 디코딩
+# 4 사람이 읽을 수있는 레이블을 얻기 위해 ImageNet 예측을 디코딩
 decoded = imagenet_utils.decode_predictions(preds)
 (imagenetID, label, prob) = decoded[0][0]
 label = "{}: {:.2f}%".format(label, prob * 100)
-print("[INFO] {}".format(label))
-
 
 
 # 그라디언트 클래스 활성화 맵을 초기화하고 히트 맵을 빌드
+print("label : "+label)
+print("i : "+str(i))
 cam = GradCAM(model, i)
 heatmap = cam.compute_heatmap(image)
 
@@ -52,8 +48,7 @@ heatmap = cv2.resize(heatmap, (orig.shape[1], orig.shape[0]))
 
 # 출력 이미지에 예측 된 레이블을 그립니다.
 cv2.rectangle(output, (0, 0), (340, 40), (0, 0, 0), -1)
-cv2.putText(output, label, (10, 25), cv2.FONT_HERSHEY_SIMPLEX,
-	0.8, (255, 255, 255), 2)
+cv2.putText(output, label, (10, 25), cv2.FONT_HERSHEY_SIMPLEX,	0.8, (255, 255, 255), 2)
 
 # 원본 이미지와 결과로 생성 된 히트 맵 및 출력 이미지를 화면에 표시
 output = np.vstack([orig, heatmap, output])

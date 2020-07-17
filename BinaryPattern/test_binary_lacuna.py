@@ -22,10 +22,11 @@ def findRegion(img):
 input_shape = (FLG.HEIGHT, FLG.WIDTH, FLG.DEPTH)
 if K.image_data_format() == "channels_first":
     input_shape = (FLG.DEPTH, FLG.HEIGHT, FLG.WIDTH)
-model = MobileNetBuilder.build_mobilenet_v2(input_shape=input_shape, classes=2)
-# model = SmallerVGGNet.build(width=FLG.WIDTH, height=FLG.HEIGHT,depth= FLG.DEPTH, classes=2, finalAct="softmax")
 
-# h5_weights_path = './output/a_lacuna_x4_150_32/modelsaved/h5/a_lacuna_x4_150_32_weights.h5'
+
+# model = MobileNetBuilder.build_mobilenet_v2(input_shape=input_shape, classes=2)
+model = SmallerVGGNet.build(width=FLG.WIDTH, height=FLG.HEIGHT, depth= FLG.DEPTH, classes=2, finalAct="softmax")
+
 h5_weights_path = './util/tflite/mobileNetV2_lacuna_padding200_32_weights.h5'
 model.load_weights(h5_weights_path)
 model.compile(loss=categorical_crossentropy, optimizer='rmsprop', metrics=['accuracy'])
