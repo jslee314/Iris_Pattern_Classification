@@ -11,16 +11,18 @@ tf.compat.v1.flags.DEFINE_integer('PATIENCE', 100,
 
 # 학습 이미지 저장 경로
 tf.compat.v1.flags.DEFINE_string('DATA_DIR',
-                    'D:/2. data/iris_pattern/Binary/spoke',
+                    'D:/2. data/iris_pattern/Region_15/js_0721_1400_5',
                     '불러올 이미지 저장 경로')
 
 # Project 기본 정보
-data_model = 'smallervgg_spoke_resize_'
+data_model = 'smallervgg_0721_1400_5'
+
+tf.compat.v1.flags.DEFINE_integer('CLASS_NUM', 5,
+                     '클래스 갯수')
 
 tf.compat.v1.flags.DEFINE_string('PROJECT_NAME',
-                    data_model + str(FLG.EPOCHS) + '_' + str(FLG.BATCH_SIZE),
+                    data_model + '_' + str(FLG.EPOCHS),
                     '프로젝트 이름 : data + model + epoch + batch size ')
-
 
 
 # image 기본 정보 =================================================================================================
@@ -33,6 +35,7 @@ tf.compat.v1.flags.DEFINE_integer('DEPTH', 3,
 dim = 180*180*3
 tf.compat.v1.flags.DEFINE_integer('INPUT_DIM', dim,
                      'target spatial dimension 높이, 32*32*3')
+
 
 # validation result 저장 경로 '''
 tf.compat.v1.flags.DEFINE_string('PLOT',

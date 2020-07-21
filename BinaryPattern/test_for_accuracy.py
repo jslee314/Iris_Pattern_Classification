@@ -3,7 +3,7 @@ from BinaryPattern.util.constants import *
 from BinaryPattern.util.dataloader import DataLoader
 import keras
 
-h5_path = 'output/smallvgg_defect_resize_200_32/modelsaved/h5/smallvgg_defect_resize_200_32.h5'
+h5_path = 'output/backup/smallvgg_defect_resize_200_32/modelsaved/h5/smallvgg_defect_resize_200_32.h5'
 data_dir = 'D:/2. data/iris_pattern/Binary/defect_binary'
 
 

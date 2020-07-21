@@ -44,7 +44,7 @@ if K.image_data_format() == "channels_first":
 # model = MobileNetBuilder.build_mobilenet_v2(input_shape=input_shape, classes=2)
 model = SmallerVGGNet.build(width=FLG.WIDTH, height=FLG.HEIGHT, depth=FLG.DEPTH, classes=2, finalAct="softmax")
 
-h5_weights_path = 'output/smallvgg_defect_padding200_32/modelsaved/h5/smallvgg_defect_padding200_32_weights.h5'
+h5_weights_path = 'output/backup/smallvgg_defect_padding200_32/modelsaved/h5/smallvgg_defect_padding200_32_weights.h5'
 # h5_weights_path = 'output/a_defect_x4_300_32/modelsaved/h5/a_defect_x4_200_32_weights.h5'
 
 model.load_weights(h5_weights_path)
