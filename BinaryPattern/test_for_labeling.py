@@ -19,19 +19,18 @@ if K.image_data_format() == "channels_first":
 model = SmallerVGGNet.build(width=FLG.WIDTH, height=FLG.HEIGHT,
                             depth=FLG.DEPTH, classes=FLG.CLASS_NUM, finalAct="softmax")
 
-h5_weights_path = 'output/smallervgg_0721_1206_5_200/model_saved/smallervgg_0721_1206_5_200_32_weight.h5'
+h5_weights_path = 'output/smallervgg_0721_1400_5_200/model_saved/smallervgg_0721_1400_5_200_weight.h5'
 
 model.load_weights(h5_weights_path)
 model.compile(loss=categorical_crossentropy, optimizer='rmsprop', metrics=['accuracy'])
 
 datas = []
 origs = []
-src_dir = 'D:/2. data/js_15angle/mask_blue/'
+src_dir = 'D:/2. data/js_15angle/mask_blue_1'
 dst_dir = 'D:/2. data/js_15angle/predicted_mask/'
 
 imagePaths = sorted(list(paths.list_images(src_dir)))
 for imagePath in imagePaths:
-    print(imagePath)
     image = cv2.imread(imagePath)
     image = cv2.resize(image, (FLG.HEIGHT, FLG.WIDTH))
     origs.append(image.copy())
@@ -44,8 +43,8 @@ preds = model.predict(data, batch_size=FLG.BATCH_SIZE)
 
 label_lists = ['defect', 'lacuna', 'normal', 'spoke', 'spot']
 
+print(">> move images")
 for i, prediction in enumerate(preds):
     classIdx = np.argmax(preds[i])
-    img_name = imagePath.split(os.path.sep)[-1]
-
-    shutil.copy(src_dir+img_name, dst_dir+label_lists[classIdx]+'/'+img_name)
+    img_name = imagePaths[i].split(os.path.sep)[-1]
+    shutil.move(imagePaths[i] , dst_dir + label_lists[classIdx]+'/'+img_name)

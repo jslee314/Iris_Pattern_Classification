@@ -1,22 +1,18 @@
 from BinaryPattern.util.constants import *
 from tensorflow.keras.losses import categorical_crossentropy
 from tensorflow.keras.preprocessing.image import img_to_array
-from tensorflow.keras.applications import imagenet_utils
 from keras import backend as K
 from CNNUtil.imutils import imutils
 from CNNUtil.gradcam import GradCAM
 from CNNUtil import paths
-
 import numpy as np
 import cv2
-from tensorflow.keras.preprocessing.image import load_img
 
 from CNNModels.EfficientNet .efficientnet import efficientNet_factory
 from CNNModels.VGG.model.vgg16v1 import VGG_16
 from CNNModels.VGG.model.smallervggnet import SmallerVGGNet
 from CNNModels.MobileNet.model.mobilenet import MobileNetBuilder
 import copy
-
 def findRegion(img):
     ori = copy.copy(img)
     width, height = (img.shape[0],img.shape[1])
@@ -35,7 +31,6 @@ def findRegion(img):
     # dst = img[y: y + len, x: x + len]
     dst = ori[y: y + h, x: x + w]
     return dst
-
 def img_padding_2(img, LENGTH=FLG.HEIGHT):
     blank_image = np.zeros((LENGTH, LENGTH, 3), np.uint8)
     (w, h)=(img.shape[0], img.shape[1])
@@ -48,42 +43,32 @@ def img_padding_2(img, LENGTH=FLG.HEIGHT):
     else:
         blank_image[0:  w, 0:  h] = img
     return blank_image
+# input_shape = (FLG.HEIGHT, FLG.WIDTH, FLG.DEPTH)
+# if K.image_data_format() == "channels_first":
+#     input_shape = (FLG.DEPTH, FLG.HEIGHT, FLG.WIDTH)
+h5_weights_path = 'output/smallervgg_0721_1500_5_200/model_saved/smallervgg_0721_1500_5_200_weight.h5'
+data_dir = 'D:/2. data/iris_pattern/Region_15/js_0721_1500_5/test/defect'
 
-input_shape = (FLG.HEIGHT, FLG.WIDTH, FLG.DEPTH)
-if K.image_data_format() == "channels_first":
-    input_shape = (FLG.DEPTH, FLG.HEIGHT, FLG.WIDTH)
 
-model = SmallerVGGNet.build(width=FLG.WIDTH, height=FLG.HEIGHT,
-                            depth=FLG.DEPTH, classes=FLG.CLASS_NUM, finalAct="softmax")
 
-h5_weights_path = 'output/smallervgg_0721_1206_5_200/model_saved/smallervgg_0721_1206_5_200_32_weight.h5'
-
+model = SmallerVGGNet.build(width=FLG.WIDTH, height=FLG.HEIGHT, depth=FLG.DEPTH, classes=FLG.CLASS_NUM, finalAct="softmax")
 model.load_weights(h5_weights_path)
 model.compile(loss=categorical_crossentropy, optimizer='rmsprop', metrics=['accuracy'])
 
-datas = []
-origs = []
-data_dir = 'D:/2. data/iris_pattern/Region_15/js_6_0720/test/defect'
-
+datas, origs = [], []
 imagePaths = sorted(list(paths.list_images(data_dir)))
 for imagePath in imagePaths:
     image = cv2.imread(imagePath)
     image = cv2.resize(image, (FLG.HEIGHT, FLG.WIDTH))
     origs.append(image.copy())
     image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
-    # image = findRegion(image)
-
-    # origs.append(image.copy())
     image = img_to_array(image)
     datas.append(image)
-
 data = np.array(datas, dtype="float") / 255.0
 preds = model.predict(data, batch_size=FLG.BATCH_SIZE)
 
 label_lists = ['defect', 'lacuna', 'normal', 'spoke', 'spot']
-
 for i, prediction in enumerate(preds):
-
     classIdx = np.argmax(preds[i])
     if classIdx != 0:
         labels_dic, preds_dic = {}, {}
@@ -92,7 +77,6 @@ for i, prediction in enumerate(preds):
             # preds_dic[label_list] = preds[i][idx]
             # labels_dic[label_list] = "{}: {:.2f}%".format('defect', preds_dic(label_list) * 100)
             print("label / i: " + "{}: {:.2f}%".format(label_list, preds[i][idx] * 100))
-
 
         cam = GradCAM(model, classIdx)
         input_data = data[i].reshape([1, 180, 180, 3])

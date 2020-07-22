@@ -16,9 +16,8 @@ import tensorflow as tf
 # h5_path =              'util/a_spot_x4_200_16.h5'
 
 # h5_path = './output/mobileNetV2_defect_padding200_16/modelsaved/h5/mobileNetV2_defect_padding200_16.h5'
-h5_path = './util/tflite/mobileNetV2_lacuna_padding200_32.h5'
-
-tfLite_path = 'util/tflite/mobileNetV2_lacuna_padding200_32.tflite'
+h5_path = './output/smallervgg_0721_1500_5_200/model_saved/smallervgg_0721_1500_5_200.h5'
+tfLite_path = './output/smallervgg_0721_1500_5_200/model_saved/smallervgg_0721_1500_5_200.tflite'
 
 converter = tf.compat.v1.lite.TFLiteConverter.from_keras_model_file(h5_path)
 flat_data = converter.convert()

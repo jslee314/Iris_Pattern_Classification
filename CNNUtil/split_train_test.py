@@ -13,7 +13,7 @@ label_dic = {'defect': [],
 
 # data_path = 'C:/Users/jslee/Downloads/1st_pattern_dataset_for_50/mask'
 data_path = 'D:/2. data/js_15angle/mask'
-dst_path = 'D:/2. data/iris_pattern/Region_15/js_0721_1400_5'
+dst_path = 'D:/2. data/iris_pattern/Region_15/js_0722_1130_5'
 
 
 for (root, dirs, files) in os.walk(data_path):

@@ -11,11 +11,11 @@ tf.compat.v1.flags.DEFINE_integer('PATIENCE', 100,
 
 # 학습 이미지 저장 경로
 tf.compat.v1.flags.DEFINE_string('DATA_DIR',
-                    'D:/2. data/iris_pattern/Region_15/js_0721_1400_5',
+                    'D:/2. data/iris_pattern/Region_15/js_0722_1130_5',
                     '불러올 이미지 저장 경로')
 
 # Project 기본 정보
-data_model = 'smallervgg_0721_1400_5'
+data_model = 'smallervgg_0722_1130_5'
 
 tf.compat.v1.flags.DEFINE_integer('CLASS_NUM', 5,
                      '클래스 갯수')
